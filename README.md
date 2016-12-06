@@ -18,7 +18,7 @@ A big thank you to that author, [dempfi](https://github.com/dempfi).
 
   ```javascript
 plugins: [
-  'hyperterm-ayu'
+      'hyperterm-ayu'
 ]
 ```
 3. Fully reload HyperTerm (`Cmd + Shift + R`)
