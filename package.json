@@ -1,0 +1,16 @@
+{
+  "name": "hyperterm-ayu",
+  "version": "1.0.0",
+  "description": "Hyperterm theme based on Ayu Theme for Sublime Text",
+  "main": "index.js",
+  "repository": "https://github.com/licatajustin/hyperterm-ayu.git",
+  "keywords": [
+    "hyperterm",
+    "hyperterm-theme",
+    "colors",
+    "ayu"
+  ],
+  "author": "Justin Licata",
+  "license": "MIT",
+  "dependencies": {}
+}
