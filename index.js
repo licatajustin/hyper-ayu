@@ -37,6 +37,12 @@ const cursorColor = YELLOW;
 const borderColor = backgroundColor;
 
 exports.decorateConfig = (config) => {
+  let windowControlsCSS
+
+  if (config.showWindowControls) {
+    windowControlsCSS = '.list_2902 { margin-left: 0 !important; }'
+  }
+
   return Object.assign({}, config, {
     foregroundColor,
     backgroundColor,
@@ -62,8 +68,10 @@ exports.decorateConfig = (config) => {
         border: 0;
       }
       .tab_textActive {
-        border-bottom: 2px solid ${YELLOW};
+        background-color: #0c0f12;
+        box-shadow: inset 2px 0 0 ${YELLOW}
       }
+      ${windowControlsCSS}
     `
   })
 }
