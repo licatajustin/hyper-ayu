@@ -60,13 +60,20 @@ exports.decorateConfig = (config) => {
         border: none !important;
       }
       .header_header {
-        background: ${inactiveTabBackgroundColor} !important;
+        background: ${backgroundColor} !important;
       }
       .splitpane_divider {
         background-color: rgba(130, 128, 184, 0.5) !important;
       }
       .tab_tab {
         border: 0;
+        background: ${inactiveTabBackgroundColor};
+      }
+      .tabs_list {
+        background: ${inactiveTabBackgroundColor};
+      }
+      .tab_active {
+        background-color: ${backgroundColor};
       }
       .tab_textActive {
         background-color: ${backgroundColor};
