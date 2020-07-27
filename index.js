@@ -1,5 +1,6 @@
 // Constants
 const backgroundColor = '#0F1419';
+const inactiveTabBackgroundColor = '#0c0f12';
 const foregroundColor = '#e6e1cf';
 
 // Colors
@@ -59,7 +60,7 @@ exports.decorateConfig = (config) => {
         border: none !important;
       }
       .header_header {
-        background: ${backgroundColor} !important;
+        background: ${inactiveTabBackgroundColor} !important;
       }
       .splitpane_divider {
         background-color: rgba(130, 128, 184, 0.5) !important;
@@ -68,8 +69,8 @@ exports.decorateConfig = (config) => {
         border: 0;
       }
       .tab_textActive {
-        background-color: #0c0f12;
-        box-shadow: inset 2px 0 0 ${YELLOW}
+        background-color: ${backgroundColor};
+        box-shadow: inset 2px 0 0 ${YELLOW};
       }
       ${windowControlsCSS}
     `
