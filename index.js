@@ -1,5 +1,6 @@
 // Constants
 const backgroundColor = '#0F1419';
+const inactiveTabBackgroundColor = '#0c0f12';
 const foregroundColor = '#e6e1cf';
 
 // Colors
@@ -66,10 +67,17 @@ exports.decorateConfig = (config) => {
       }
       .tab_tab {
         border: 0;
+        background: ${inactiveTabBackgroundColor};
+      }
+      .tabs_list {
+        background: ${inactiveTabBackgroundColor};
+      }
+      .tab_active {
+        background-color: ${backgroundColor};
       }
       .tab_textActive {
-        background-color: #0c0f12;
-        box-shadow: inset 2px 0 0 ${YELLOW}
+        background-color: ${backgroundColor};
+        box-shadow: inset 2px 0 0 ${YELLOW};
       }
       ${windowControlsCSS}
     `
